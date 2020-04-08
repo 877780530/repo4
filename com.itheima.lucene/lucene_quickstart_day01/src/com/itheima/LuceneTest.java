@@ -17,6 +17,7 @@ public class LuceneTest {
         Document document = new Document();
 
         int i=0;
+        int j=1;
          //绑定 索引存放路径
         FSDirectory directory = FSDirectory.open(new File("D:\\temp\\index").toPath());
         IndexWriterConfig config = new IndexWriterConfig();
