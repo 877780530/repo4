@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot_quickstart_002" />
+        <module name="springboot_quickstart_001" />
+        <module name="mybatis_dataJPA" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis_dataJPA" target="1.5" />
+      <module name="springboot_mybatis" target="1.8" />
+      <module name="springboot_quickstart_001" target="1.8" />
+      <module name="springboot_quickstart_002" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot_mybatis" options="-parameters" />
+      <module name="springboot_quickstart_001" options="-parameters" />
+      <module name="springboot_quickstart_002" options="-parameters" />
+    </option>
+  </component>
+</project>
