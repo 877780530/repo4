@@ -1,4 +1,0 @@
-0:0:0:0:0:0:0:1 - - [26/Mar/2020:10:52:24 +0800] "GET /maven-ssm-web/test/account HTTP/1.1" 200 106 http-bio-8080-exec-1 1121
-0:0:0:0:0:0:0:1 - - [26/Mar/2020:10:57:16 +0800] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
-0:0:0:0:0:0:0:1 - - [26/Mar/2020:19:38:20 +0800] "GET /maven-ssm-web/test/account HTTP/1.1" 200 106 http-bio-8080-exec-1 1520
-0:0:0:0:0:0:0:1 - - [26/Mar/2020:19:38:20 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
