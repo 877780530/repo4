@@ -1,11 +1,11 @@
-var vue = new Vue({
-    el:"#app",
-    data:{
-        user:{id:"",username:"",password:"",age:"",sex:"",email:""},
-        userList:[]
+new Vue({
+    el: "#app",
+    data: {
+        user: {id:"",username:"",password:"",age:"",sex:"",email:""},
+        userList: []
     },
-    methods:{
-        findAll:function () {
+    methods: {
+        findAll: function () {
             var _this = this;
             axios.get("/user/findAll.do").then(function (response) {
                 _this.userList = response.data;
@@ -14,27 +14,27 @@ var vue = new Vue({
                 console.log(err);
             });
         },
-        findById:function (userid) {
+        findById: function (userid) {
             var _this = this;
-            axios.get("/user/findById.do",{
-                params:{
-                    id:userid
+            axios.get("/vuejsDemo/user/findById.do", {
+                params: {
+                    id: userid
                 }
             }).then(function (response) {
                 _this.user = response.data;
                 $('#myModal').modal("show");
             }).catch(function (err) {
-            })
+            });
         },
-        update:function (user) {
+        update: function (user) {
             var _this = this;
-            axios.post("/user/findAll.do",this.user).then(function (response) {
+            axios.post("/vuejsDemo/user/update.do",_this.user).then(function (response) {
                 _this.findAll();
             }).catch(function (err) {
             });
         }
     },
-    create:function () {
+    created:function () {
         this.findAll();
     }
 });

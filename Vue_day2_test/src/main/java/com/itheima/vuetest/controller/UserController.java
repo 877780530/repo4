@@ -16,19 +16,20 @@ public class UserController {
     @Autowired
     IUserService userService;
 
-    @RequestMapping("/findAll")
-    public List<User> findAllUser(){
+    @RequestMapping("/findAll.do")
+    public  List<User> findAllUser(){
         List<User> users = userService.findAllUser();
+        System.out.println("请求到我了");
         return users;
     }
 
-    @RequestMapping("/findById")
+    @RequestMapping("/findById.do")
     public User findUserById(int id){
         User user = userService.findUserById(id);
         return user;
     }
 
-    @RequestMapping("/updateUser")
+    @RequestMapping("/updateUser.do")
     public void updateUser(User user){
         userService.updateUser(user);
     }
