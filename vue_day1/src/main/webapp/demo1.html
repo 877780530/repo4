@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>快速入门</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			{{message}}<br>
+			{{false?"真":"假"}}<br>
+			{{number}}
+		</div>
+	</body>
+	<script>
+		new Vue({
+			el:"#app",
+			data:{
+				message:"Hello,Vue",
+				number:100
+			}
+		});
+	</script>
+</html>
